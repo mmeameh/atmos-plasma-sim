@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atmos-plasma-sim"
+version = "1.0.0"
+authors = [
+  { name="Dr. Ameh Moses Monday", email="mmeameh@gmail.com" },
+]
+description = "HPC Simulation of Non-Linear Equatorial Plasma Waves & Wavelet Sensor Telemetry Processing"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: C++",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
